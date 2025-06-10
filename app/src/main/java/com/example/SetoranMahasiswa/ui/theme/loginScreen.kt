@@ -81,9 +81,6 @@ fun LoginScreen(
                     modifier = Modifier.fillMaxWidth(),
                     isError = nim.isBlank()
                 )
-                if (nim.isBlank()) {
-                    Text("NIM tidak boleh kosong", color = Color.Red, style = MaterialTheme.typography.labelSmall)
-                }
 
                 OutlinedTextField(
                     value = password,
@@ -100,9 +97,6 @@ fun LoginScreen(
                         }
                     }
                 )
-                if (password.isBlank()) {
-                    Text("Password tidak boleh kosong", color = Color.Red, style = MaterialTheme.typography.labelSmall)
-                }
 
                 Button(
                     onClick = {
