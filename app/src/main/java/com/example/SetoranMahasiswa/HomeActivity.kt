@@ -13,7 +13,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.SetoranMahasiswa.ui.theme.UASTheme
+import com.example.SetoranMahasiswa.ui.theme.SetoranMahasiswaTheme
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -43,7 +43,7 @@ class HomeActivity : ComponentActivity() {
         viewModel.fetchData(token)
 
         setContent {
-            UASTheme {
+            SetoranMahasiswaTheme {
                 Surface(modifier = Modifier.fillMaxSize()) {
                     val setoranList by viewModel.setoranList.collectAsState()
                     val ringkasanList by viewModel.ringkasanList.collectAsState()

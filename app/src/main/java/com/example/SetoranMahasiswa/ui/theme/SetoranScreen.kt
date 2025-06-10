@@ -118,7 +118,7 @@ fun generatePdf(
     var y = 30f
 
     val logo = try {
-        BitmapFactory.decodeResource(context.resources, R.drawable.ic_launcher_foreground)
+        BitmapFactory.decodeResource(context.resources, R.drawable.logo_uin)
     } catch (e: Exception) {
         null
     }

@@ -8,7 +8,7 @@ import androidx.activity.compose.setContent
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.ui.Modifier
-import com.example.SetoranMahasiswa.ui.theme.UASTheme
+import com.example.SetoranMahasiswa.ui.theme.SetoranMahasiswaTheme
 import com.example.SetoranMahasiswa.ui.theme.LoginScreen
 import kotlinx.coroutines.*
 import okhttp3.OkHttpClient
@@ -49,7 +49,7 @@ class LoginActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         setContent {
-            UASTheme {
+            SetoranMahasiswaTheme {
                 Surface(modifier = Modifier) {
                     LoginScreen (
                         isLoading = isLoading.value,
